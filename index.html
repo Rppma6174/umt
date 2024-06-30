@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="utama">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylehome.css">
+</head>
+<body class="body">
+    <div class="div_center">
+        <header class="header">
+            <div class="bagianatas">
+               <a href="home.html"><img src="logo4.png" alt="" id="logo2"></a>
+            </div>
+            <div class="bagianbawah">
+                <a href="kelas.html" class="kelas"><b>Kelas</b></a>
+                <a href="komunitas.html" class="komunitas"><b>Komunitas</b></a>
+                <a href="artikel.html" class="artikel"><b>Artikel</b></a>
+            </div>
+        </header>
+        <div class="latarbelakang"></div>
+        <main class="main">
+            <div class="content">
+               <h1 class="h1" id="h11">Platform Independen </h1>
+               <h1 class="h1" id="h12">Pembelajaran Matematika</h1>
+               <p class="p1">Video,  Artikel,      Rangkuman, Diskusi, Latihan soal</p>
+            </div>
+            <div class="content2">
+                <div class="linkpaket">
+                    <ul>
+                        <li>
+                            <h1>Beli paket belajar untuk mengakses semua materi :</h1>
+                        </li>
+                    </ul>
+                    <a href="">Beli paket</a>
+                </div> 
+                <div class="div-akses-materi-gratis">
+                    <ul>
+                        <li>
+                            <h1>Akses materi gratis :</h1> 
+                        </li>
+                    </ul>
+                    <div class="div-link-selection">
+                        <select id="pilihan">
+                            <option value="nilai-mutlak.html">Nilai Mutlak</option>
+                            <option value="kalkulus.html">Kalkulus</option>
+                            <option value="barisan-dan-deret.html">Barisan dan deret</option>
+                    </select>
+                    <a href="nilai-mutlak.html" id="href"><img src="cari.png" alt=""></a>
+                    </div>    
+                </div>
+            </div>
+            <div class="content3">
+                <div class="content3-text">
+                    <h1>Pilih fitur yang sesuai dengan cara belajarmu :</h1>
+                </div>
+                <div class="content3-gambar">
+
+                </div>
+            </div>
+        </main>
+    </div>
+    <script>
+        var pilihan = document.getElementById("pilihan")
+        var href = document.getElementById("href")
+
+        pilihan.addEventListener("change", function() {
+            var selectedoption = pilihan.options[pilihan.selectedIndex];
+            href.href = selectedoption.value;
+    });
+    </script>
+</body>
+</html>
+
